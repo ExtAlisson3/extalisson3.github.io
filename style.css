@@ -364,13 +364,16 @@ img {
 .column-header .specialty-icon {
     width: 3rem;
     height: 3rem;
-    color: var(--color-accent);
     flex-shrink: 0;
     transition: var(--transition);
+    object-fit: contain;
+    /* Filter to apply accent color (#bc5026) to black icons */
+    filter: invert(41%) sepia(45%) saturate(1084%) hue-rotate(342deg) brightness(87%) contrast(87%);
 }
 
 .column-header:hover .specialty-icon {
     transform: scale(1.1);
+    filter: invert(41%) sepia(45%) saturate(1084%) hue-rotate(342deg) brightness(95%) contrast(95%);
 }
 
 .column-header h3 {
