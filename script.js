@@ -340,26 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            // Simulate sending data
+            // Let the form submit naturally to FormSubmit
+            // Show loading state on button
             const btn = contactForm.querySelector('button');
-            const originalText = btn.textContent;
-
             btn.textContent = 'Enviando...';
             btn.disabled = true;
-
-            setTimeout(() => {
-                contactForm.reset();
-                btn.textContent = originalText;
-                btn.disabled = false;
-                formSuccess.style.display = 'block';
-
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    formSuccess.style.display = 'none';
-                }, 5000);
-            }, 1500);
         });
     }
 
