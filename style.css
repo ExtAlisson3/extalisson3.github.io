@@ -361,6 +361,18 @@ img {
     color: var(--color-accent);
 }
 
+.column-header .specialty-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.column-header:hover .specialty-icon {
+    transform: scale(1.1);
+}
+
 .column-header h3 {
     font-size: 1.8rem;
 }
