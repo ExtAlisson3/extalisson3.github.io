@@ -367,6 +367,7 @@ img {
     flex-shrink: 0;
     transition: var(--transition);
     object-fit: contain;
+    background: transparent !important;
 }
 
 .column-header:hover .specialty-icon {
